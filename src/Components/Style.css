@@ -1,0 +1,179 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background: #0d0d10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+.App {
+  width: 650px;
+  padding: 45px 40px;     
+  border-radius: 22px;
+  background: rgba(25, 25, 32, 0.92);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 
+    0 0 30px rgba(0, 255, 170, 0.12),
+    0 0 85px rgba(0, 255, 170, 0.09);
+}
+
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  margin: 0;
+  color: #4ade80;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+header p {
+  color: #dddddd;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+
+.task-form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+
+#inp {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 6px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 0 15px rgba(72, 255, 178, 0.20);
+}
+
+#inp input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+}
+
+
+#inp button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: linear-gradient(90deg,#2563eb,#3b82f6);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+}
+
+#inp button:hover {
+  transform: scale(1.05);
+}
+
+
+#btns select {
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(72, 255, 178, 0.20);
+}
+
+#btns select option {
+  background-color: #d3d3d3;
+  color: #111111;
+}
+
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.task-list li {
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.task-list li.completed {
+  text-decoration: line-through;
+  text-decoration-color: #4ade80;
+  opacity: 0.6;
+}
+
+
+.task-list button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.task-list button:nth-child(1) { color: #4ade80; }
+.task-list button:nth-child(2) { color: #f87171; }
+
+
+.progress-tracker {
+  margin-top: 10px;
+}
+
+.progress-tracker p,
+.progress-tracker span {
+  color: #ffffff;
+}
+
+.progress-bar {
+  height: 8px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.progress {
+  background: #4ade80;
+  height: 100%;
+}
+
+
+.clear-btn {
+  margin-top: 20px;
+  padding: 10px 16px;
+  background: #ef4444;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+}
+
+.clear-btn:hover {
+  transform: scale(1.05);
+}
